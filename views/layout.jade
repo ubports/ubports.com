@@ -1,0 +1,78 @@
+doctype html(lang='en')
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name='description', content='')
+  meta(name='author', content='')
+  title UBports
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+  // Bootstrap Core CSS
+  link(href='css/bootstrap.css', rel='stylesheet')
+  link(href='css/style.css', rel='stylesheet')
+  link(href='css/ubuntu.css', rel='stylesheet')
+  // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+  // WARNING: Respond.js doesn't work if you view the page via file://
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body(ng-app='ubports', ng-controller='ctrl')
+    nav.navbar.navbar-default(role='navigation', data-role='header')
+      .container
+        .navbar-header
+          .visible-xs.visible-sm(data-role='actions')
+            button.fa.fa-bars(type='button', ng-click='opened = !opened')
+            div(data-role='actions-overflow-list', ng-class='{opened: opened}')
+              ul
+                li
+                  a(ng-click='opened = false', href='https://devices.ubports.com') Devices
+                li
+                  a(ng-click='opened = false', href='https://forums.ubports.com') Forums
+                li
+                  a(ng-click='opened = false', href='https://wiki.ubports.com') Wiki
+                li
+                  a(ng-click='opened = false', href='/get-involved') Get Involved
+                li
+                  a(ng-click='opened = false', href='/deveopers') Deveopers
+          a.navbar-brand.ng-cloak(href='/apps', ng-if="$state.current.name == 'app'")
+            div(data-role='back-btn')
+            | UBports
+          a.navbar-brand(href='/', ng-if="$state.current.name != 'app'")
+            div(data-role='back-btn', ng-if="$state.current.name != 'main'")
+            | UBports
+        .navbar-collapse.navbar-right.hidden-xs.hidden-sm
+          ul.nav.navbar-nav
+            li
+              a(href='https://devices.ubports.com') Devices
+            li
+              a(href='https://forums.ubports.com') Forums
+            li
+              a(href='https://wiki.ubports.com') Wiki
+            li
+              a(href='/get-involved') Get Involved
+            li
+              a(href='/deveopers') Deveopers
+
+    .container(data-role='content')
+      block content
+      center
+        p
+          a(href='https://www.digitalocean.com/?refcode=afe991ab278c')
+            img(src='https://www.digitalocean.com/assets/images/logos-badges/png/DO_Proudly_Hosted_Badge_Grey-1652c782.png', width='150', height='40')
+        p
+          | This site is maintained by
+          a(href='/deveopers') The UBports deveopers
+          |  and is not an any way endorsed by or affiliated with
+          a(href='http://ubuntu.com/') Ubuntu
+          |  or
+          a(href='http://www.canonical.com/') Canonical
+          | .
+          a(href='http://ubuntu.com/') Ubuntu
+          |  and
+          a(href='http://www.canonical.com/') Canonical
+          |  are registered trademarks of
+          a(href='http://www.canonical.com/') Canonical Ltd.
+
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js')
+    script(src='js/root.js')
+    script(src='js/bootstrap.min.js')

@@ -1,0 +1,369 @@
+body {
+    background: #ededed;
+    font-family: "Ubuntu";
+    font-weight: normal;
+    color: #787878;
+}
+
+[data-role="header"] {
+    background: #ededed;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+[data-role="header"]:after {
+    background: #c2c2c2;
+    content: "";
+    border-top: 1px solid #afafaf;
+    height: 15px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 59px;
+}
+
+[data-role="back-btn"] {
+    background: #ededed;
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    cursor: pointer;
+    border: none;
+    position: relative;
+}
+
+[data-role="back-btn"]:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent url("/assets/suru/back.svg") no-repeat center center;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+[data-role="actions"] {
+    float: right;
+    height: 59px;
+    display: inline-block;
+    padding-right: 8px;
+    background: #ededed;
+    position: relative;
+    z-index: 10;
+}
+
+[data-role="actions"] button {
+    border: 0;
+    padding: 0;
+    width: 40px;
+    height: 59px;
+    line-height: 60px;
+    cursor: pointer;
+    float: left;
+    background: transparent;
+}
+
+[data-role="actions"] button img {
+    position: relative;
+    top: 5px;
+}
+
+[data-role="actions"] button:disabled {
+    opacity: 0.3;
+}
+
+[data-role="actions"] button:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+[data-role="actions"] button:active {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+[data-role="actions"] a {
+    color: #787878;
+}
+
+[data-role="actions-overflow-icon"] {
+    background: transparent;
+}
+[data-role="actions-overflow-icon"]:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent url("/assets/suru/contextual-menu.svg") no-repeat center center !important;
+    background-size: 100% !important;
+    margin: 0 auto;
+}
+
+[data-role="actions-overflow-list"] {
+    background: #ededed;
+    -webkit-box-shadow: 0 0px 10px rgba(140, 140, 140, 0.3);
+    box-shadow: 0 0px 10px rgba(140, 140, 140, 0.3);
+    width: 160px;
+    max-height: 250px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+[data-role="actions-overflow-list"].opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+[data-role="actions-overflow-list"] ul {
+    margin: 0;
+    padding: 0;
+}
+
+[data-role="actions-overflow-list"] li {
+    position: relative;
+    padding: 16px 16px;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: left;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 45px;
+    cursor: pointer;
+    background: transparent no-repeat center left;
+    background-size: 20px;
+    background-position-x: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+[data-role="actions-overflow-list"] li:only-child {
+    border-bottom: 0;
+}
+
+[data-role="actions-overflow-list"] li:active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background: #ededed;
+}
+
+html, body, [data-role="mainview"], [data-role="content"] {
+    position: relative;
+    min-height: 100%;
+}
+
+[data-role="content"] {
+    border-top: 1px solid #f0f0f0;
+    font-size: 1rem "Ubuntu";
+    min-height: calc(100% - 75px);
+    color: #787878;
+    padding-top: 80px;
+}
+
+[data-role="tab"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+[data-role="tab"]:first-child {
+    display: block;
+}
+
+[data-role="button"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 42px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #dd4814;
+    border: 2px solid #dd4814;
+    border-radius: 6px;
+    color: white;
+    font-family: "Ubuntu";
+    padding: 9px 25px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+[data-role="button"]:hover {
+    text-decoration: none;
+    color: white;
+}
+
+[data-role="button"].positive {
+    background: #38b44a;
+    color: white;
+    border-color: #38b44a;
+}
+
+[data-role="button"].information {
+    background: #2ab7ec;
+    color: white;
+    border-color: #2ab7ec;
+}
+
+[data-role="button"].secondary:hover {
+    color: #888888;
+}
+
+[data-role="button"].secondary {
+    background: white;
+    color: #888888;
+}
+
+[data-role="button"].information.secondary {
+    background: white;
+    color: #888888;
+    border-color: #2ab7ec;
+}
+
+[data-role="button"].information.secondary:hover {
+    color: #888888;
+}
+
+[data-role="button"].negative {
+    background: #929292;
+    color: white;
+    border-color: #929292;
+}
+
+[data-role="list"] [data-role="listitem"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3.1rem;
+    border-bottom: solid 0.1rem #c7c7c7;
+    color: #787878;
+    position: relative;
+}
+
+[data-role="list"] [data-role="listitem"] > a {
+    text-decoration: none;
+    color: #787878;
+    display: block;
+    height: 3rem;
+    position: relative;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    border-top: 1px solid #ebebeb;
+    font-size: 0.9rem;
+}
+
+[data-role="list"] [data-role="listitem"] > a:after {
+    content: "";
+    background: transparent url(/assets/suru/go-next.svg) no-repeat 0.5rem 0.5rem;
+    background-size: 40% 75%;
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: 50%;
+    right: 0;
+    margin-top: -3.5rem;
+    z-index: 0;
+}
+
+[data-role="list"] [data-role="listitem"] > a:active {
+  background: #e6e6e6;
+  border-color: #ebebeb;
+}
+
+.background-green {
+    background-color: #3fb24f;
+}
+
+.background-red {
+    background-color: #fc4949;
+}
+
+.background-orange {
+    background-color: #dd4814;
+}
+
+.background-purple {
+    background-color: #762572;
+}
+
+.background-blue {
+    background-color: #1ab6ef;
+}
+
+.background-lightgrey {
+    background-color: #888888;
+}
+
+.background-darkgrey {
+    background-color: #5d5d5d;
+}
+
+.background-white {
+    background-color: #f5f5f5;
+}
+
+.text-green {
+    color: #3fb24f;
+}
+
+.text-red {
+    color: #fc4949;
+}
+
+.text-orange {
+    color: #dd4814;
+}
+
+.text-purple {
+    color: #762572;
+}
+
+.text-blue {
+    color: #1ab6ef;
+}
+
+.text-lightgrey {
+    color: #888888;
+}
+
+.text-darkgrey {
+    color: #5d5d5d;
+}
+
+.text-white {
+    color: #f5f5f5;
+}
+
+[data-role="divider"]:before {
+    border-top: 1px #c2c2c2 solid;
+}
+
+[data-role="well"] {
+    background-color: white;
+    border: 1px #c2c2c2 solid;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
