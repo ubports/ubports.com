@@ -1,6 +1,20 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  center
+    img(src="/img/whoops.png")
+    h1(style="font-size: 60px;") Whoooops!
+    if error.status === 404
+      h2 We couldn't find that page :(
+    else
+      h2 Something went wrong :(
+    h1= error.status
+  br
+  .panel.panel-default(ng-if="!error")
+    .panel-heading(ng-click="toggeError()") Show debug output
+  .panel.panel-default(ng-if="error")
+    .panel-heading(ng-click="toggeError()") Hide debug output
+    .panel-body
+      p= message
+      p= error.status
+      pre #{error.stack}
