@@ -7,13 +7,20 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET deveopers page. */
-router.get('/deveopers', function(req, res, next) {
-  res.render('deveopers');
+router.get('/developers', function(req, res, next) {
+  res.render('developers');
 });
 
 /* GET get-involved page. */
 router.get('/get-involved', function(req, res, next) {
   res.render('get-involved');
 });
+
+/* GET get-involved page. */
+router.get('/test', function(req, res, next) {
+  res.send("test");
+});
+
+
 
 module.exports = router;
