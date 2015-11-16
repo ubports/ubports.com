@@ -1,6 +1,6 @@
 body {
     background: #ededed;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", sans-serif;
     font-weight: normal;
     color: #787878;
 }
@@ -169,7 +169,8 @@ html, body, [data-role="mainview"], [data-role="content"] {
 
 [data-role="content"] {
     border-top: 1px solid #f0f0f0;
-    font-size: 1rem "Ubuntu";
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
     min-height: calc(100% - 75px);
     color: #787878;
     padding-top: 80px;
@@ -202,7 +203,7 @@ html, body, [data-role="mainview"], [data-role="content"] {
     border: 2px solid #dd4814;
     border-radius: 6px;
     color: white;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", sans-serif;
     padding: 9px 25px;
     text-align: center;
     text-decoration: none;
