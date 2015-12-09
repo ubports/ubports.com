@@ -1,5 +1,5 @@
 .itemName {
-    text-align: center;   
+    text-align: center;
 }
 
 .itemImage {
@@ -11,6 +11,10 @@
 .panels {
     min-height: 440px;
     max-height: 440px;
+}
+
+p {
+  font-size: 14px;
 }
 
 .ellipsis {
