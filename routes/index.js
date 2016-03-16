@@ -16,11 +16,4 @@ router.get('/get-involved', function(req, res, next) {
   res.render('get-involved');
 });
 
-/* GET get-involved page. */
-router.get('/test', function(req, res, next) {
-  res.send("test");
-});
-
-
-
 module.exports = router;
