@@ -16,4 +16,9 @@ router.get('/get-involved', function(req, res, next) {
   res.render('get-involved');
 });
 
+/* GET sponsors page. */
+router.get('/sponsors', function(req, res, next) {
+  res.render('sponsors');
+});
+
 module.exports = router;
