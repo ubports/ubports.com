@@ -7,8 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET deveopers page. */
+router.get('/team', function(req, res, next) {
+  res.render('team');
+});
 router.get('/developers', function(req, res, next) {
-  res.render('developers');
+  res.redirect("/team");
 });
 
 /* GET get-involved page. */

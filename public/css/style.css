@@ -55,3 +55,7 @@ p {
         background: -ms-linear-gradient(to right,rgba(255,255,255,0),white 50%,white);
         background: linear-gradient(to right,rgba(255,255,255,0),white 50%,white);
     }
+
+.team-panel {
+  height: 200;
+}

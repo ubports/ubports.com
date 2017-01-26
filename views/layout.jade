@@ -38,7 +38,7 @@ head
                 li
                   a(ng-click='opened = false', href='/sponsors') Sponsors
                 li
-                  a(ng-click='opened = false', href='/developers') Developers
+                  a(ng-click='opened = false', href='/team') Team
           a.navbar-brand.ng-cloak(href='/apps', ng-if="$state.current.name == 'app'")
             div(data-role='back-btn')
             | UBports
@@ -60,7 +60,7 @@ head
             li
               a(href='/sponsors') Sponsors
             li
-              a(href='/developers') Developers
+              a(href='/team') Team
 
     .container(data-role='content')
       block content
@@ -72,7 +72,7 @@ head
         p
           a(href="https://github.com/ubports/ubports.com") Edit this page
         p
-          | This site is maintained by 
+          | This site is maintained by
           a(href='/developers') The UBports Developers
           |  and is not an any way endorsed by or affiliated with
           a(href='http://ubuntu.com/')  Ubuntu
