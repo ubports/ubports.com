@@ -24,4 +24,8 @@ router.get('/sponsors', function(req, res, next) {
   res.render('sponsors');
 });
 
+router.get('/telegram', function(req, res, next) {
+  res.redirect("https://t.me/joinchat/AAAAAAASEHGRGL5NNb2QAQ");
+})
+
 module.exports = router;
