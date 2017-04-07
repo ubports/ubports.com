@@ -25,7 +25,7 @@ router.get('/sponsors', function(req, res, next) {
 });
 
 router.get('/telegram', function(req, res, next) {
-  res.redirect("https://t.me/joinchat/AAAAAAASEHGRGL5NNb2QAQ");
+  res.redirect("https://telegram.me/ubports");
 })
 
 module.exports = router;
