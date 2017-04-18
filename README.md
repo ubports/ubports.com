@@ -10,3 +10,5 @@ DEBUG=ubports_main_:* npm start
 ```
 
 Then open localhost:2700 in your browser
+
+## Production

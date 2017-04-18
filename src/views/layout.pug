@@ -10,8 +10,7 @@ head
   link(href='https://fonts.googleapis.com/css?family=Ubuntu:400,700', rel='stylesheet', type='text/css')
   // Bootstrap Core CSS
   link(href='css/bootstrap.css', rel='stylesheet')
-  link(href='css/style.css', rel='stylesheet')
-  link(href='css/ubuntu.css', rel='stylesheet')
+  link(href='css/ubports.css', rel='stylesheet')
   link(rel="icon", type="image/png", href="/img/icon.png")
   // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
   // WARNING: Respond.js doesn't work if you view the page via file://
@@ -40,11 +39,9 @@ head
                   a(ng-click='opened = false', href='/sponsors') Sponsors
                 li
                   a(ng-click='opened = false', href='/team') Team
-          a.navbar-brand.ng-cloak(href='/apps', ng-if="$state.current.name == 'app'")
+          a.navbar-brand(href='/')
             div(data-role='back-btn')
-            | UBports
-          a.navbar-brand(href='/', ng-if="$state.current.name != 'app'")
-            div(data-role='back-btn', ng-if="$state.current.name != 'main'")
+                img.himg(src="/img/robot-t.png")
             | UBports
         .navbar-collapse.navbar-right.hidden-xs.hidden-sm
           ul.nav.navbar-nav
@@ -63,29 +60,8 @@ head
             li
               a(href='/team') Team
 
-    .container(data-role='content')
-      block content
-      br
-      center
-        p
-          a(href='https://www.digitalocean.com/')
-            img(src='/img/DigitalOcean.png', width='200', height='43')
-        p
-          a(href="https://github.com/ubports/ubports.com") Edit this page
-        p
-          | This site is maintained by
-          a(href='/developers') The UBports Developers
-          |  and is not an any way endorsed by or affiliated with
-          a(href='http://ubuntu.com/')  Ubuntu
-          |  or
-          a(href='http://www.canonical.com/')  Canonical
-          | .
-          a(href='http://ubuntu.com/')  Ubuntu
-          |  and
-          a(href='http://www.canonical.com/')  Canonical
-          |  are registered trademarks of
-          a(href='http://www.canonical.com/')  Canonical Ltd.
-
+    block content
+    .container
+        include footer
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js')
     script(src='js/root.js')
-    script(src='js/bootstrap.min.js')

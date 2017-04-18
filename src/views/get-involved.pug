@@ -1,0 +1,71 @@
+extends layout
+
+block content
+  .container(data-role='content')
+      article.post
+        center
+          h1 Get Involved
+        h2 Support the UBports project
+        hr(style="border-top-color: white; margin-top: 4px")
+        p The UBports project is fairly new and it might need a kick to really get started, the UBport team is working hard to make this project a huge success!
+        p It is very easy to make a difference. Depending on your skill set, your availability, and on your wealth you can help UBports in one or more of the following ways:
+        h2 Financial help
+        hr(style="border-top-color: white; margin-top: 4px")
+        h3 Donations
+        p You can help by making a financial contribution to the project. What we need to make this project a success is debug devices, OTA servers, web servers, CI servers and other things that cost money. We already have some servers donated by DigitalOcean.
+        p
+          form.form-inline(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+            br
+            .form-group
+            .input-group(style='margin-right: 5px;')
+              .input-group-addon
+                span.fa.fa-usd
+              input.form-control(type='number', placeholder='Amount', ng-model='payAmout')
+            input(type='hidden', name='cmd', value='_donations')
+            input(type='hidden', name='business', value='paypal@ubports.com')
+            input(type='hidden', name='lc', value='BT')
+            input(type='hidden', name='item_name', value='UBports')
+            input(type='hidden', name='amount', value='{{payAmout | number}}')
+            input(type='hidden', name='currency_code', value='USD')
+            input(type='hidden', name='no_note', value='0')
+            input(type='hidden', name='bn', value='PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest')
+            button.btn.btn-primary(border='0', name='submit', alt='PayPal - The safer, easier way to pay online!') Donate
+        p
+          a(href='https://www.patreon.com/ubports', target='_blank') Become a patreon
+
+        h2 Hardware
+        hr(style="border-top-color: white; margin-top: 4px")
+        h3 Donate
+        p You can help by donating hardware to us, we need debug devices to port Ubuntu Touch to that device. If you have an device you want to donate, drop us a mail to me@mariogrip.com with the device name.
+
+        h2 Support and promotion
+        hr(style="border-top-color: white; margin-top: 4px")
+        h3 Spreading the word
+        p If you like the UBports project, let people know. Talk about it with your friends and the people around you.
+        h3 Joining the Community
+        p UBports isn&rsquo;t just porting Ubuntu touch, we are also a community that helps each other with their Ubuntu Touch device(s).
+        p
+          a(href='http://forums.ubports.com/') Register on the forums
+        h3 Helping others
+        p If you have some spare time and you&rsquo;re willing to help other users with technical problems, you should seriously consider reading the forums and help users solve the problems you know how to fix.
+        p
+          a(href='http://forums.ubports.com/') Join the UBports forums
+
+        h2 Project contributions
+        hr(style="border-top-color: white; margin-top: 4px")
+        h3 Bug reports
+        p If you notice something that does not work as it should, and it&rsquo;s not listed on known issues. Please leave a bug report.
+        p
+          a(href='https://bugs.launchpad.net/ubports-android') Report a bug
+        h3 Code
+        p If you want to help developing and porting Ubuntu Touch why not help us. If you have a device that you want to port and maintain, please drop us a email to me@mariogrip.com  or pm mariogrip on the forums.
+        p
+          a(href='http://github.com/ubports') Fork/patch our source code
+        h3 IRC (Internet Relay Chat)
+        p If you want to chat with the developers in real time you can join us in IRC though this Kiwi IRC Embedded Chat or join #ubuntu-touch and #ubports with whatever IRC client you use!
+
+        iframe(src="https://kiwiirc.com/client/irc.freenode.net/?nick=Ubport-user|?#ubuntu-touch, #ubports" style="border:0; width:100%; height:450px;")
+        br
+        center
+         p This page proudly inspired by
+          a(href='http://www.linuxmint.com/getinvolved.php')  http://www.linuxmint.com/getinvolved.php
