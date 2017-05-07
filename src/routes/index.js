@@ -24,4 +24,9 @@ router.get('/sponsors', function(req, res, next) {
   res.render('sponsors');
 });
 
+/* GET faq page. */
+router.get('/faq', function(req, res, next) {
+  res.render('faq');
+});
+
 module.exports = router;
