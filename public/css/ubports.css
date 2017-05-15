@@ -1,35 +1,168 @@
 body {
-    background: #ededed;
+    background: #ffffff;
     font-family: "Ubuntu", sans-serif;
     font-weight: normal;
     color: #787878;
 }
 
+.itemName {
+    text-align: center;
+}
+
+.itemImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panels {
+    min-height: 440px;
+    max-height: 440px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    height: 300px;
+    line-height: 25px;
+}
+.ellipsis:before {
+    content: "";
+    float: left;
+    width: 5px;
+    height: 300px;
+}
+.ellipsis > *:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -5px;
+}
+.ellipsis:after {
+    content: "\02026";
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    float: right;
+    position: relative;
+    top: -25px;
+    left: 100%;
+    width: 3em;
+    margin-left: -3em;
+    padding-right: 5px;
+    text-align: right;
+    background-size: 100% 100%;/* 512x1 image,gradient for IE9. Transparent at 0% -> white at 50% -> white at 100%.*/
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAMAAACfZeZEAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5TgsRjMZXhS30YrvDUP3Emow1YibnM9+ggOZxrBtpRRo94gxItwLOoX/vsHdA2yGgL8+TdKUK8VFufmHSGgAQWJNc9tk+rb5KMCA8aM0iwpWV6dwP9+fXuFerm3yMs0jDOysY8wr5FTldeoWKabgEJ8RATG+IeIdsn2NUqLjQ3OgBDumC3SbRMsVKsValZplydZpZpbJOQco2KdYeEe36BDAL8/vgHBfr2CvTyDu8R7esU6RcZ5ecc4+Af3iLcJSjZ1ivT0S/PMs3LNck4x8U7wz7Bv0G9RLtHuEq1TbJQr1OtVqqnWqRdoqBhnmSbZ5mXapRtcJGOc4t2eYiFfH9AS7qYlgAAARlJREFUKM9jqK9fEGS7VNrDI2+F/nyB1Z4Fa5UKN4TbbeLY7FW0Tatkp3jp7mj7vXzl+4yrDsYoVx+JYz7mXXNSp/a0RN25JMcLPP8umzRcTZW77tNyk63tdprzXdmO+2ZdD9MFe56Y9z3LUG96mcX02n/CW71JH6Qmf8px/cw77ZvVzB+BCj8D5vxhn/vXZh6D4uzf1rN+Cc347j79q/zUL25TPrJMfG/5LvuNZP8rixeZz/mf+vU+Vut+5NL5gPOeb/sd1dZbTs03hBuvmV5JuaRyMfk849nEM7qnEk6IHI8/qn049hB35QGHiv0yZXuMdkXtYC3ebrglcqvYxoj1muvC1nDlrzJYGbpcdHHIMo2FwYv+j3QAAOBSfkZYITwUAAAAAElFTkSuQmCC);
+    background: -webkit-gradient(linear,left top,right top,
+        from(rgba(255,255,255,0)),to(white),color-stop(50%,white));
+        background: -moz-linear-gradient(to right,rgba(255,255,255,0),white 50%,white);
+        background: -o-linear-gradient(to right,rgba(255,255,255,0),white 50%,white);
+        background: -ms-linear-gradient(to right,rgba(255,255,255,0),white 50%,white);
+        background: linear-gradient(to right,rgba(255,255,255,0),white 50%,white);
+    }
+
+.team-panel {
+  height: 200;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+    font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.item-center {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.installer {
+  margin-top: 30px;
+  background-color: #E95420;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.installer-header {
+  color: #fff;
+  font-size: 40pt;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.installer-text {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 16pt;
+}
+
+.installer-btn {
+  text-align: center;
+}
+
+.fa-space {
+  margin-left: 4px;
+}
+
+.installer-img {
+  height: 300px;
+}
+
+.installer-img {
+  height: 40%;
+}
+
+.splash-img {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.splash-text {
+  text-align: center;
+  font-size: 50pt;
+}
+
+.himg {
+    height: 40px;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
 [data-role="header"] {
-    background: #ededed;
-    height: 60px;
+    background: #fff;
+    height: 50px;
     width: 100%;
     position: fixed;
     z-index: 10;
     top: 0;
+    border: 0;
 }
 
 [data-role="header"]:after {
-    background: #c2c2c2;
     content: "";
-    border-top: 1px solid #afafaf;
     height: 15px;
     width: 100%;
     display: block;
     position: absolute;
-    top: 59px;
+    top: 49px;
 }
 
 [data-role="back-btn"] {
-    background: #ededed;
+    background: transparent;
     width: 40px;
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 40px;
     float: left;
     cursor: pointer;
     border: none;
@@ -41,7 +174,6 @@ body {
     display: block;
     width: 20px;
     height: 20px;
-    background: transparent url("/assets/suru/back.svg") no-repeat center center;
     background-size: 100%;
     margin: 0 auto;
 }
@@ -102,7 +234,6 @@ body {
     display: block;
     width: 20px;
     height: 20px;
-    background: transparent url("/assets/suru/contextual-menu.svg") no-repeat center center !important;
     background-size: 100% !important;
     margin: 0 auto;
 }
@@ -159,19 +290,16 @@ body {
 }
 
 body {
-    background: #ededed;
+    background: #ffffff;
 }
 
 html, body, [data-role="mainview"], [data-role="content"] {
     position: relative;
-    min-height: 100%;
 }
 
 [data-role="content"] {
-    border-top: 1px solid #f0f0f0;
     font-size: 1rem;
     font-family: "Ubuntu", sans-serif;
-    min-height: calc(100% - 75px);
     color: #787878;
     padding-top: 80px;
 }
@@ -277,7 +405,6 @@ html, body, [data-role="mainview"], [data-role="content"] {
 
 [data-role="list"] [data-role="listitem"] > a:after {
     content: "";
-    background: transparent url(/assets/suru/go-next.svg) no-repeat 0.5rem 0.5rem;
     background-size: 40% 75%;
     position: absolute;
     width: 7rem;
@@ -367,4 +494,21 @@ html, body, [data-role="mainview"], [data-role="content"] {
     border-radius: 6px;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+/* Support for responsive iframes */
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%; /* The height of the item will now be 56% of the width. */
+}
+
+/* More support for responsive iframes */
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }

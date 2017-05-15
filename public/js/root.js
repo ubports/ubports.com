@@ -9,3 +9,7 @@ app.controller("ctrl", ['$scope', '$http', function($scope) {
     console.log("test");
   }
 }]);
+
+$("#mList").click(() => {
+  $('#mListModal').modal('show')
+});

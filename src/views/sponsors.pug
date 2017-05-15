@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .container(data-role='content')
+      h1 Sponsors:
+      hr(style="border-top-color: white; margin-top: 5px")
+      .row
+        .col-xs-6.col-md-4
+          .panel.panel-default
+            .panel-body
+              center
+                a(href="http://digitalocean.com")
+                  p(style="font-size: 17px") Sponsed servers from DigitalOcean
+                  img(src="/img/DigitalOcean_v.png", width="200", height="150")
+      h2 Patreons:
+      hr(style="border-top-color: white; margin-top: 5px")
+      .row
+        each sponsor in sponsorsData.patreons
+          .col-xs-6.col-md-4
+            .panel.panel-default
+              .panel-body
+                center
+                  if sponsor.url
+                    a(href=sponsor.url, style="font-size: 25px; color: black;")= sponsor.name
+                  else
+                    span(style="font-size: 25px; color: black;")= sponsor.name
