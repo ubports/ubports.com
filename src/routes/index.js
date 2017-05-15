@@ -36,4 +36,8 @@ router.get('/faq', function(req, res, next) {
   res.render('faq');
 });
 
+router.get('/telegram', function(req, res, next) {
+  res.redirect("https://telegram.me/ubports");
+})
+
 module.exports = router;
