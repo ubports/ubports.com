@@ -5,7 +5,7 @@ var request = require('request');
 var expect = require('chai').expect;
 
 var url = 'http://localhost:2700/';
-var pages = ['', 'get-involved', 'developers', 'team', 'sponsors']
+var pages = ['', 'get-involved', 'developers', 'team', 'sponsors', 'faq']
 
 
 describe("testing "+process.env.NODE_ENV, function () {
