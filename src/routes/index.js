@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var sponsorsData = require("../../data/sponsors.json");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -19,9 +20,15 @@ router.get('/get-involved', function(req, res, next) {
   res.render('get-involved');
 });
 
+router.get('/installer', function(req, res, next) {
+  res.render('installer');
+});
+
 /* GET sponsors page. */
 router.get('/sponsors', function(req, res, next) {
-  res.render('sponsors');
+  res.render('sponsors', {
+    sponsorsData: sponsorsData
+  });
 });
 
 /* GET faq page. */

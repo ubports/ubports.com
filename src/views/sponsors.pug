@@ -15,8 +15,12 @@ block content
       h2 Patreons:
       hr(style="border-top-color: white; margin-top: 5px")
       .row
-        .col-xs-6.col-md-4
-          .panel.panel-default
-            .panel-body
-              center
-                a(href="https://www.patreon.com/user?u=2897298", style="font-size: 25px") MrWaterlemon
+        each sponsor in sponsorsData.patreons
+          .col-xs-6.col-md-4
+            .panel.panel-default
+              .panel-body
+                center
+                  if sponsor.url
+                    a(href=sponsor.url, style="font-size: 25px; color: black;")= sponsor.name
+                  else
+                    span(style="font-size: 25px; color: black;")= sponsor.name
