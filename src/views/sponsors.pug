@@ -2,16 +2,17 @@ extends layout
 
 block content
   .container(data-role='content')
-      h1 Sponsors:
+      h1 Premium sponsors:
       hr(style="border-top-color: white; margin-top: 5px")
-      .row
+      .text-center
+        a(href="https://www.privateinternetaccess.com")
+          img(src="/img/PIALogo4x.png")
+      br
+      h2 Sponsors:
+      .row(style="margin-left: 50px;")
         .col-xs-6.col-md-4
-          .panel.panel-default
-            .panel-body
-              center
-                a(href="http://digitalocean.com")
-                  p(style="font-size: 17px") Sponsed servers from DigitalOcean
-                  img(src="/img/DigitalOcean_v.png", width="200", height="150")
+              a(href="http://digitalocean.com")
+                img(src="/img/DigitalOcean_v.png", width="200", height="150")
       h2 Patreons:
       hr(style="border-top-color: white; margin-top: 5px")
       .row
