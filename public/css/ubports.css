@@ -9,6 +9,11 @@ body {
     text-align: center;
 }
 
+a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .itemImage {
     display: block;
     margin-left: auto;
