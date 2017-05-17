@@ -188,7 +188,6 @@ p {
     height: 59px;
     display: inline-block;
     padding-right: 8px;
-    background: #ededed;
     position: relative;
     z-index: 10;
 }
@@ -223,10 +222,6 @@ p {
     margin: 0 auto;
 }
 
-[data-role="actions"] button:active {
-    background: rgba(0, 0, 0, 0.05);
-}
-
 [data-role="actions"] a {
     color: #787878;
 }
@@ -244,7 +239,7 @@ p {
 }
 
 [data-role="actions-overflow-list"] {
-    background: #ededed;
+    background: #ffffff;
     -webkit-box-shadow: 0 0px 10px rgba(140, 140, 140, 0.3);
     box-shadow: 0 0px 10px rgba(140, 140, 140, 0.3);
     width: 160px;
