@@ -512,3 +512,21 @@ html, body, [data-role="mainview"], [data-role="content"] {
   left: 0;
   top: 0;
 }
+
+.get-involved div.center {
+  text-align: center;
+}
+.get-involved h3 {
+  text-align: left;
+  vertical-align: top;
+  display:inline-block;
+  margin:0.5%;
+  min-width: 300px;
+  max-width: 40%;
+  min-height:150px;
+  padding:0.5%;
+}
+.get-involved h3 > p {
+  display: block;
+  margin-top:5px;
+}
