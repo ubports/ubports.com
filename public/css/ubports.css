@@ -530,3 +530,8 @@ html, body, [data-role="mainview"], [data-role="content"] {
   display: block;
   margin-top:5px;
 }
+
+.get-involved #mc_embed_signup input.email {
+  max-width:350px;
+  width:100%;
+}
