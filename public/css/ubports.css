@@ -180,7 +180,7 @@ p {
 
 [data-role="actions"] {
     float: right;
-    height: 59px;
+    height: 50px;
     display: inline-block;
     padding-right: 8px;
     background: #ededed;
@@ -192,8 +192,8 @@ p {
     border: 0;
     padding: 0;
     width: 40px;
-    height: 59px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     cursor: pointer;
     float: left;
     background: transparent;
@@ -240,15 +240,15 @@ p {
 
 [data-role="actions-overflow-list"] {
     background: #ededed;
-    -webkit-box-shadow: 0 0px 10px rgba(140, 140, 140, 0.3);
-    box-shadow: 0 0px 10px rgba(140, 140, 140, 0.3);
+    -webkit-box-shadow: 0 10px 10px rgba(140, 140, 140, 0.3);
+    box-shadow: 0 10px 10px rgba(140, 140, 140, 0.3);
     width: 160px;
-    max-height: 250px;
+    max-height: 0px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     position: absolute;
     right: 0;
-    top: 58px;
+    top: 49px;
     z-index: 9;
     visibility: hidden;
     opacity: 0;
@@ -257,6 +257,7 @@ p {
 
 [data-role="actions-overflow-list"].opened {
     visibility: visible;
+    max-height: 250px;
     opacity: 1;
 }
 
@@ -532,6 +533,7 @@ html, body, [data-role="mainview"], [data-role="content"] {
 }
 
 .get-involved #mc_embed_signup input.email {
+  max-width:100%;
   margin-bottom: 5px;
 }
 
