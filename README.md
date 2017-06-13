@@ -1,6 +1,6 @@
 # ubports.com
 [![Build Status](https://travis-ci.org/ubports/ubports.com.svg?branch=master)](https://travis-ci.org/ubports/ubports.com)
-[![Coverage Status](https://coveralls.io/repos/github/ubports/ubports.com/badge.svg?branch=mariogrip%2Fnew-design)](https://coveralls.io/github/ubports/ubports.com?branch=mariogrip%2Fnew-design)
+[![Coverage Status](https://coveralls.io/repos/github/ubports/ubports.com/badge.svg?branch=master)](https://coveralls.io/github/ubports/ubports.com?branch=master)
 
 The new UBports website
 
