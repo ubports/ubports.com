@@ -1,16 +1,14 @@
-# UBports Website
+# UBports Website Bug Tracker
 
-This is where we track all [bugs](https://github.com/ubports/ubports.com/issues?q=is%3Aissue+is%3Aopen+label%3Abug) and [enhancement-proposals](https://github.com/ubports/ubports.com/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aenhancement) for our websites.
+This is where we track all issues ([bugs](https://github.com/ubports/ubports.com/issues?q=is%3Aissue+is%3Aopen+label%3Abug) and [enhancements](https://github.com/ubports/ubports.com/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aenhancement)) for our main website [ubports.com](https://ubports.com/). 
 
-Please make sure that you're in [in the right place](https://wiki.ubports.com/wiki/UBports-Bug-Trackers) and read the [guide on writing a good bug report](https://wiki.ubports.com/wiki/Writing-a-Good-Bug-Report) before filing a new issue. Thank you!
+Before submitting a new issue, please read our [guide on writing a good bug report](https://docs.ubports.com/en/latest/contribute/bugreporting.html). 
 
-## How our websites are built
+If you would like to report a bug or suggest an enhancement for one of our other websites, please see the table below to determine which bug tracker to use. Thank you.
 
-|Website|Technology
+## List of websites and corresponding bug trackers
+
+|Website|Bug Tracker
 |---|---
-|[ubports.com](https://ubports.com)|[Odoo](https://github.com/odoo/odoo)
-|[forums.ubports.com](https://forums.ubports.com)|[NodeBB](https://github.com/NodeBB)
-|[wiki.ubports.com](https://wiki.ubports.com)|[Jingo](https://github.com/claudioc/jingo)
-|[devblog.ubports.com](https://devblog.ubports.com)|[GitHub Pages](https://github.io) and [Jekyll](https://github.com/jekyll/jekyll)
-|[devices.ubports.com](https://devices.ubports.com)|*[Custom](https://github.com/ubports/devices.ubports.com)*
-|[stats.ubports.com](https://stats.ubports.com)|*[Custom](https://github.com/ubports/stats.ubports.com)*
+|[open-store.io](https://open-store.io/)|[https://gitlab.com/theopenstore/openstore-meta/-/issues](https://gitlab.com/theopenstore/openstore-meta/-/issues)
+|[devices.ubports.com](https://devices.ubports.com)|[https://gitlab.com/ubports/infrastructure/devices.ubuntu-touch.io/-/issues](https://gitlab.com/ubports/infrastructure/devices.ubuntu-touch.io/-/issues)
